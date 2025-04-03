@@ -44,11 +44,11 @@
 
         special {
             bindings = <
-&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans  &trans     &trans                 &trans            &trans     &trans  &trans
-&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans  &trans     &kp RA(Y)              &trans            &kp RA(P)  &trans  &trans
-&trans  &kp RA(Q)  &kp RA(S)  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp EQUAL  &trans  &trans  &trans      &trans  &trans  &trans  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &trans     &trans  &trans
-&trans  &kp TILDE  &kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &trans                     &trans      &trans                  &trans     &kp RIGHT_BRACKET      &kp GREATER_THAN  &trans     &trans  &trans
-&trans  &trans     &trans     &trans          &trans                           &trans  &trans  &trans      &trans  &trans  &trans             &trans                 &trans            &trans     &trans  &trans
+&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans     &trans     &trans                 &trans            &trans     &trans  &trans
+&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans     &trans     &kp RA(Y)              &trans            &kp RA(P)  &trans  &trans
+&trans  &kp RA(Q)  &kp RA(S)  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp EQUAL  &trans  &trans  &trans      &trans  &trans  &trans     &kp MINUS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &trans     &trans  &trans
+&trans  &kp TILDE  &kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &trans                     &trans      &trans                     &trans     &kp RIGHT_BRACKET      &kp GREATER_THAN  &trans     &trans  &trans
+&trans  &trans     &trans     &trans          &trans                           &trans  &trans  &trans      &trans  &trans  &kp LCTRL             &trans                 &trans            &trans     &trans  &trans
             >;
 
             label = "Special";
@@ -56,11 +56,11 @@
 
         navigation {
             bindings = <
-&trans  &trans  &trans  &trans      &trans  &trans  &trans                                      &trans  &trans    &trans    &trans   &trans     &trans  &trans
-&trans  &trans  &trans  &trans      &trans  &trans  &trans                                      &trans  &trans    &trans    &trans   &trans     &trans  &trans
-&trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &kp ESCAPE  &trans  &trans                  &trans      &trans                  &kp HOME  &trans    &kp TAB  &kp END    &trans  &trans
-&trans  &trans  &trans  &trans      &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans   &trans     &trans  &trans
+&trans  &trans  &trans  &trans      &trans  &trans  &trans                                        &trans  &trans    &trans    &trans   &trans     &trans  &trans
+&trans  &trans  &trans  &trans      &trans  &trans  &trans                                        &trans  &trans    &trans    &trans   &trans     &trans  &trans
+&trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &kp ESCAPE  &trans  &trans                    &trans      &trans                  &kp HOME  &trans    &kp TAB  &kp END    &trans  &trans
+&trans  &trans  &trans  &trans      &trans          &kp LGUI  &trans  &trans      &trans  &trans  &trans            &trans    &trans   &trans     &trans  &trans
             >;
 
             label = "Navigation";
