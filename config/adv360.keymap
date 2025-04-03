@@ -39,32 +39,32 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             display-name = "Default";
             bindings = <
-&kp EQUAL  &kp N1        &kp N2    &kp N3      &kp N4       &kp N5  &tog 4                                                         &mo 6           &kp N6  &kp N7       &kp N8     &kp N9   &kp N0           &kp MINUS
-&kp TAB    &kp Q         &kp W     &kp E       &kp R        &kp T   &tog 3                                                         &none           &kp Y   &kp U        &kp I      &kp O    &kp P            &kp BSLH
-&kp ESC    &hm LSHIFT A  &lt 1 S   &lt 2 D     &hm LCTRL F  &kp G   &tog 7         &none         &none      &none  &none           &none           &kp H   &hm RCTRL J  &lt 2 K    &lt 1 L  &hm RSHIFT SEMI  &kp SQT
-&none      &kp Z         &kp X     &hm LALT C  &lt 7 V      &kp B                                &none      &none                                  &kp N   &kp M        &kp COMMA  &kp DOT  &kp FSLH         &none
-&mo 5      &none         &kp CAPS  &none       &none                &hm LGUI BSPC  &hm RALT DEL  &none      &none  &hm RALT ENTER  &hm LGUI SPACE          &none        &none      &none    &none            &mo 5
+&kp LALT    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &tog 4                                                    &mo 6           &kp N6  &kp N7  &kp N8     &kp N9   &kp N0         &none
+&kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T   &tog 3                                                    &none           &kp Y   &kp U   &kp I      &kp O    &kp P          &kp BSLH
+&kp ESC     &kp A   &kp S   &kp D   &kp F   &kp G   &tog 7          &none      &none      &none  &none        &none           &kp H   &kp J   &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LSHIFT  &kp Z   &kp X   &kp C   &kp V   &kp B                              &none      &none                               &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp RSHIFT
+&mo 5       &none   &none   &none   &none           &hm LCTRL BSPC  &lt 1 DEL  &none      &none  &lt 2 ENTER  &hm LGUI SPACE          &none   &none      &none    &none          &mo 5
             >;
 
             label = "Base";
         };
 
-        custom {
+        special {
             bindings = <
-&trans  &trans         &trans            &trans          &trans                &trans     &trans                                      &trans  &trans  &trans                 &trans           &trans             &trans            &trans
-&trans  &trans         &trans            &trans          &trans                &trans     &trans                                      &trans  &trans  &trans                 &trans           &trans             &trans            &trans
-&trans  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &trans     &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
-&trans  &trans         &trans            &trans          &kp TILDE             &kp GRAVE                  &trans      &trans                  &trans  &trans                 &trans           &trans             &trans            &trans
-&trans  &trans         &trans            &trans          &trans                           &trans  &trans  &trans      &trans  &trans  &trans          &trans                 &trans           &trans             &trans            &trans
+&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans  &trans     &trans                 &trans            &trans     &trans  &trans
+&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans  &trans     &kp RA(Y)              &trans            &kp RA(P)  &trans  &trans
+&trans  &kp RA(Q)  &kp RA(S)  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp EQUAL  &trans  &trans  &trans      &trans  &trans  &trans  &kp MINUS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &trans     &trans  &trans
+&trans  &kp TILDE  &kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &trans                     &trans      &trans                  &trans     &kp RIGHT_BRACKET      &kp GREATER_THAN  &trans     &trans  &trans
+&trans  &trans     &trans     &trans          &trans                           &trans  &trans  &trans      &trans  &trans  &trans             &trans                 &trans            &trans     &trans  &trans
             >;
 
-            label = "Custom";
+            label = "Special";
         };
 
-        arrows {
+        navigation {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans  &trans
@@ -73,7 +73,7 @@
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans  &trans
             >;
 
-            label = "Arrows";
+            label = "Navigation";
         };
 
         no_home_row_mods {
