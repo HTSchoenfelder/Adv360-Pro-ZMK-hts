@@ -37,7 +37,7 @@
 &kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T   &tog 4                                                    &none           &kp Y   &kp U   &kp I      &kp O    &kp P          &kp BSLH
 &kp ESC     &kp A   &kp S   &kp D   &kp F   &kp G   &tog 8          &none      &none      &none  &none        &none           &kp H   &kp J   &kp K      &kp L    &kp SEMICOLON  &kp SQT
 &kp LSHIFT  &kp Z   &kp X   &kp C   &kp V   &kp B                              &none      &none                               &kp N   &kp M   &kp COMMA  &kp DOT  &lt 3 SLASH    &kp RSHIFT
-&mo 6       &none   &none   &none   &none           &hm LCTRL BSPC  &lt 1 DEL  &none      &none  &lt 2 ENTER  &hm LGUI SPACE          &none   &none      &none    &none          &mo 6
+&mo 6       &none   &none   &none   &none           &hm LCTRL BSPC  &lt 2 DEL  &none      &none  &lt 1 ENTER  &hm LGUI SPACE          &none   &none      &none    &none          &mo 6
             >;
 
             label = "Base";
