@@ -66,26 +66,28 @@
             label = "left_side";
         };
 
-        navigation {
+        right_side_2 {
             bindings = <
-&trans  &trans  &trans  &trans      &trans  &trans  &trans                                        &trans  &trans    &trans    &trans   &trans     &trans  &trans
-&trans  &trans  &trans  &trans      &trans  &trans  &trans                                        &trans  &trans    &trans    &trans   &trans     &trans  &trans
-&trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &kp ESCAPE  &trans  &trans                    &trans      &trans                  &kp HOME  &trans    &kp TAB  &kp END    &trans  &trans
-&trans  &trans  &trans  &trans      &trans          &kp LGUI  &trans  &trans      &trans  &trans  &trans            &trans    &trans   &trans     &trans  &trans
+&trans  &trans  &trans  &trans      &trans  &trans  &trans                                         &trans     &trans    &trans    &trans   &trans     &trans  &trans
+&trans  &trans  &trans  &trans      &trans  &trans  &trans                                         &trans     &trans    &trans    &trans   &trans     &trans  &trans
+&trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &kp ESCAPE  &trans  &trans                  &trans      &trans                        &kp HOME  &trans    &kp TAB  &kp END    &trans  &trans
+&trans  &trans  &trans  &trans      &trans          &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE            &trans    &trans   &trans     &trans  &trans
             >;
 
-            label = "Navigation";
+            label = "right_side_2";
         };
 
-        original {
+        left_side_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                 &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                 &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans      &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans      &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp DEL  &trans      &trans  &kp ENTER  &kp SPACE          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                              &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                              &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp DEL  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "left_side_2";
         };
 
         no_home_row_mods {
