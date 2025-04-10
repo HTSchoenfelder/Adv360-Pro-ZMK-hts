@@ -56,11 +56,11 @@
 
         left_side {
             bindings = <
-&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Q)  &kp RA(S)  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp EQUAL  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TILDE  &kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &trans                     &trans      &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans          &trans                           &trans  &trans  &trans      &trans  &trans  &kp LCTRL          &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans          &trans                &trans     &trans                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans          &trans                &trans     &trans                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Q)  &kp RA(S)  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp EQUAL  &trans    &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE  &kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &trans                       &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans          &trans                           &kp LGUI  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "left_side";
