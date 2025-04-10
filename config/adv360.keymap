@@ -33,26 +33,37 @@
         default {
             display-name = "Default";
             bindings = <
-&kp LALT    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &tog 5                                                    &mo 7           &kp N6  &kp N7  &kp N8     &kp N9   &kp N0         &none
-&kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T   &tog 4                                                    &none           &kp Y   &kp U   &kp I      &kp O    &kp P          &kp BSLH
-&kp ESC     &kp A   &kp S   &kp D   &kp F   &kp G   &tog 8          &none      &none      &none  &none        &none           &kp H   &kp J   &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&kp LSHIFT  &kp Z   &kp X   &kp C   &kp V   &kp B                              &none      &none                               &kp N   &kp M   &kp COMMA  &kp DOT  &lt 3 SLASH    &kp RSHIFT
-&mo 6       &none   &none   &none   &none           &hm LCTRL BSPC  &lt 2 DEL  &none      &none  &lt 1 ENTER  &hm LGUI SPACE          &none   &none      &none    &none          &mo 6
+&kp LALT    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &tog 6                                                    &mo 8           &kp N6  &kp N7  &kp N8     &kp N9   &kp N0         &none
+&kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T   &tog 5                                                    &none           &kp Y   &kp U   &kp I      &kp O    &kp P          &kp BSLH
+&kp ESC     &kp A   &kp S   &kp D   &kp F   &kp G   &tog 9          &none      &none      &none  &none        &none           &kp H   &kp J   &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LSHIFT  &kp Z   &kp X   &kp C   &kp V   &kp B                              &none      &none                               &kp N   &kp M   &kp COMMA  &kp DOT  &lt 4 SLASH    &kp RSHIFT
+&mo 7       &none   &none   &none   &none           &hm LCTRL BSPC  &lt 1 DEL  &none      &none  &lt 2 ENTER  &hm LGUI SPACE          &none   &none      &none    &none          &mo 7
             >;
 
             label = "Base";
         };
 
-        special {
+        right_side {
+            label = "right_side";
             bindings = <
-&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans     &trans     &trans                 &trans            &trans     &trans  &trans
-&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans     &trans     &kp RA(Y)              &trans            &kp RA(P)  &trans  &trans
-&trans  &kp RA(Q)  &kp RA(S)  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp EQUAL  &trans  &trans  &trans      &trans  &trans  &trans     &kp MINUS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &trans     &trans  &trans
-&trans  &kp TILDE  &kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &trans                     &trans      &trans                     &trans     &kp RIGHT_BRACKET      &kp GREATER_THAN  &trans     &trans  &trans
-&trans  &trans     &trans     &trans          &trans                           &trans  &trans  &trans      &trans  &trans  &kp LCTRL             &trans                 &trans            &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans     &trans     &trans                 &trans            &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans     &trans     &kp RA(Y)              &trans            &kp RA(P)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &kp MINUS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                     &trans     &kp RIGHT_BRACKET      &kp GREATER_THAN  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp LCTRL             &trans                 &trans            &trans     &trans  &trans
+            >;
+        };
+
+        left_side {
+            bindings = <
+&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans          &trans                &trans     &trans                                      &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Q)  &kp RA(S)  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp EQUAL  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE  &kp GRAVE  &kp LESS_THAN   &kp LEFT_BRACKET      &trans                     &trans      &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans          &trans                           &trans  &trans  &trans      &trans  &trans  &kp LCTRL          &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "Special";
+            label = "left_side";
         };
 
         navigation {
@@ -81,29 +92,29 @@
             label = "No Home Row Mods";
             display-name = "NoHomeRowMods";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 5                                                              &mo 7      &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 4                                                              &none      &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &tog 8    &kp LCTRL  &kp LALT                  &kp LALT  &kp RCTRL  &none      &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 6                                                              &mo 8      &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 5                                                              &none      &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &tog 9    &kp LCTRL  &kp LALT                  &kp LALT  &kp RCTRL  &none      &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp LS(LA(LC(LGUI)))      &kp LGUI                        &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 6      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp RALT                  &kp RALT  &kp ENTER  &kp SPACE          &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mo 6
+&mo 7      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp RALT                  &kp RALT  &kp ENTER  &kp SPACE          &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mo 7
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 7      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 6      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 6
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans        &kp KP_DOT     &trans           &trans
             >;
         };
 
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 5                                      &mo 7   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 6                                      &mo 8   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
@@ -126,9 +137,9 @@
             bindings = <
 &none  &none  &none  &none  &none  &none  &none                                   &none      &none  &none           &none           &none            &none      &none
 &none  &none  &none  &none  &none  &none  &none                                   &none      &none  &none           &mmv MOVE_UP    &none            &none      &none
-&none  &none  &none  &none  &none  &none  &tog 8  &none  &none      &none  &none  &none      &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
+&none  &none  &none  &none  &none  &none  &tog 9  &none  &none      &none  &none  &none      &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
 &none  &none  &none  &none  &none  &none                 &none      &none                    &none  &none           &mkp MCLK       &none            &none      &none
-&none  &none  &none  &none  &none         &tog 8  &none  &none      &none  &none  &mkp LCLK         &none           &none           &none            &none      &none
+&none  &none  &none  &none  &none         &tog 9  &none  &none      &none  &none  &mkp LCLK         &none           &none           &none            &none      &none
             >;
 
             label = "Mouse";
