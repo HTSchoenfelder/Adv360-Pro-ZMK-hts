@@ -107,11 +107,11 @@
 
         left_side_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                              &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                              &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans         &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp DEL  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans  &trans    &trans      &trans       &trans                                              &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans                                              &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1           &kp N2  &kp N3    &kp N4      &kp N5       &trans         &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1           &kp F2  &kp F3    &kp F4      &kp F5                               &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans  &trans    &trans                   &kp BACKSPACE  &kp DEL  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "left_side_2";
