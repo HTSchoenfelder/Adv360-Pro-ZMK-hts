@@ -130,11 +130,11 @@
         navigation {
             label = "navigation";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp HOME  &trans    &trans  &kp END    &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans  &trans     &trans  &trans
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none     &none     &none   &none      &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none     &none     &none   &none      &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &kp HOME  &none     &none   &kp END    &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none            &none     &none   &none      &none  &none
             >;
         };
 
