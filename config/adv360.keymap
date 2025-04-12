@@ -61,10 +61,10 @@
             display-name = "Default";
             bindings = <
 &none  &none              &none  &none  &none  &none  &tog 8                                                    &mo 6           &none  &none  &none      &none    &none                       &none
-&none  &kp Q              &kp W  &kp E  &kp R  &kp T  &tog 0                                                    &none           &kp Y  &kp U  &kp I      &kp O    &kp P                       &none
-&none  &hm_left LSHIFT A  &kp S  &kp D  &kp F  &kp G  &tog 4          &none      &none      &none  &none        &none           &kp H  &kp J  &kp K      &kp L    &hm_right RSHIFT SEMICOLON  &none
+&none  &kp Q              &kp W  &kp E  &kp R  &kp T  &tog 9                                                    &none           &kp Y  &kp U  &kp I      &kp O    &kp P                       &none
+&none  &hm_left LSHIFT A  &kp S  &kp D  &kp F  &kp G  &tog 5          &none      &none      &none  &none        &none           &kp H  &kp J  &kp K      &kp L    &hm_right RSHIFT SEMICOLON  &none
 &none  &kp Z              &kp X  &kp C  &kp V  &kp B                             &none      &none                               &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH                   &none
-&mo 7  &none              &none  &none  &none         &hm LCTRL BSPC  &lt 1 DEL  &none      &none  &lt 2 ENTER  &hm LGUI SPACE         &none  &none      &none    &none                       &mo 7
+&mo 7  &none              &none  &none  &none         &hm LCTRL BSPC  &lt 1 DEL  &none      &none  &lt 2 ENTER  &hm LGUI SPACE         &none  &none      &none    &none                       &mo 8
             >;
 
             label = "Base";
@@ -75,8 +75,8 @@
             bindings = <
 &trans  &trans          &trans     &trans    &trans   &trans  &trans                                      &trans  &trans     &trans                 &trans           &trans             &trans            &trans
 &trans  &trans          &trans     &kp RALT  &trans   &trans  &trans                                      &trans  &kp PLUS   &kp RA(Y)              &kp MINUS        &kp RA(P)          &kp UNDERSCORE    &trans
-&trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &mo 3    &mo 4   &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT   &kp DOWN               &kp UP           &kp RIGHT          &kp BACKSLASH     &trans
-&trans  &mo 8           &trans     &kp ESC   &kp TAB  &trans                  &trans      &trans                  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
+&trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &mo 3    &mo 5   &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT   &kp DOWN               &kp UP           &kp RIGHT          &kp BACKSLASH     &trans
+&trans  &mo 4           &trans     &kp ESC   &kp TAB  &trans                  &trans      &trans                  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
 &trans  &trans          &trans     &trans    &trans           &trans  &trans  &trans      &trans  &trans  &trans             &trans                 &trans           &trans             &trans            &trans
             >;
         };
@@ -104,13 +104,24 @@
             >;
         };
 
+        numbers {
+            label = "numbers";
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none                                  &none   &none  &none   &none   &none   &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none   &none  &kp N7  &kp N8  &kp N9  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none   &none  &kp N4  &kp N5  &kp N6  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                 &none  &kp N1  &kp N2  &kp N3  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &kp N0         &none   &none   &none   &none  &none
+            >;
+        };
+
         mouse {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none                                   &none      &none  &none           &none           &none            &none      &none
 &none  &none  &none  &none  &none  &none  &none                                   &none      &none  &none           &mmv MOVE_UP    &none            &none      &none
-&none  &none  &none  &none  &none  &none  &tog 4  &none  &none      &none  &none  &none      &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
+&none  &none  &none  &none  &none  &none  &tog 5  &none  &none      &none  &none  &none      &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
 &none  &none  &none  &none  &none  &none                 &none      &none                    &none  &none           &mkp MCLK       &none            &none      &none
-&none  &none  &none  &none  &none         &tog 4  &none  &none      &none  &none  &mkp LCLK         &none           &none           &none            &none      &none
+&none  &none  &none  &none  &none         &tog 5  &none  &none      &none  &none  &mkp LCLK         &none           &none           &none            &none      &none
             >;
 
             label = "Mouse";
@@ -130,7 +141,7 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 8                                      &mo 6   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 9                                      &mo 7   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
@@ -153,11 +164,11 @@
             label = "No Home Row Mods";
             display-name = "NoHomeRowMods";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 8                                                              &mo 6      &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 9                                                              &mo 7      &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 0                                                              &none      &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &tog 4    &kp LCTRL  &kp LALT                  &kp LALT  &kp RCTRL  &none      &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &tog 5    &kp LCTRL  &kp LALT                  &kp LALT  &kp RCTRL  &none      &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp LS(LA(LC(LGUI)))      &kp LGUI                        &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 7      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp RALT                  &kp RALT  &kp ENTER  &kp SPACE          &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mo 7
+&mo 8      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp RALT                  &kp RALT  &kp ENTER  &kp SPACE          &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mo 8
             >;
         };
     };
