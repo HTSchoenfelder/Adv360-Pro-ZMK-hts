@@ -74,7 +74,7 @@
             label = "right_side";
             bindings = <
 &trans  &trans          &trans     &trans    &trans   &trans  &trans                                      &trans  &trans     &trans                 &trans           &trans             &trans            &trans
-&trans  &trans          &trans     &trans    &trans   &trans  &trans                                      &trans  &kp PLUS   &kp RA(Y)              &kp MINUS        &kp RA(P)          &kp UNDERSCORE    &trans
+&trans  &trans          &trans     &kp RALT  &trans   &trans  &trans                                      &trans  &kp PLUS   &kp RA(Y)              &kp MINUS        &kp RA(P)          &kp UNDERSCORE    &trans
 &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &mo 3    &mo 10  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT   &kp DOWN               &kp UP           &kp RIGHT          &kp BACKSLASH     &trans
 &trans  &mo 7           &trans     &kp ESC   &kp TAB  &trans                  &trans      &trans                  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
 &trans  &trans          &trans     &trans    &trans           &trans  &trans  &trans      &trans  &trans  &trans             &trans                 &trans           &trans             &trans            &trans
@@ -84,7 +84,7 @@
         left_side {
             bindings = <
 &trans  &trans           &trans            &trans          &trans                &trans         &trans                                      &trans  &trans  &trans  &trans    &trans     &trans           &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN       &kp POUND       &kp DOLLAR            &kp PERCENT    &trans                                      &trans  &trans  &trans  &trans    &trans     &trans           &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN       &kp POUND       &kp DOLLAR            &kp PERCENT    &trans                                      &trans  &trans  &trans  &kp RALT  &trans     &trans           &trans
 &trans  &kp RA(Q)        &kp RA(S)         &kp TILDE       &kp PIPE              &kp AMPERSAND  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &mo 4   &kp LALT  &kp LCTRL  &kp RIGHT_SHIFT  &trans
 &trans  &kp LESS_THAN    &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp ASTERISK                   &trans      &trans                  &trans  &trans  &trans    &trans     &trans           &trans
 &trans  &trans           &trans            &trans          &trans                               &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans    &trans     &trans           &trans
