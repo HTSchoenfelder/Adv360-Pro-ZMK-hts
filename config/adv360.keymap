@@ -83,8 +83,8 @@
             bindings = <
 &trans  &trans           &trans       &trans     &trans        &trans         &trans                                      &trans  &trans  &trans  &trans    &trans     &trans           &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR    &kp PERCENT    &trans                                      &trans  &trans  &trans  &kp RALT  &trans     &trans           &trans
-&trans  &kp RA(Q)        &kp RA(S)    &kp GRAVE  &kp ASTERISK  &kp AMPERSAND  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &mo 3   &kp LALT  &kp LCTRL  &kp RIGHT_SHIFT  &trans
-&trans  &trans           &trans       &trans     &trans        &trans                         &trans      &trans                  &trans  &trans  &trans    &trans     &trans           &trans
+&trans  &kp RA(Q)        &kp RA(S)    &kp TILDE  &kp ASTERISK  &kp AMPERSAND  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &mo 3   &kp LALT  &kp LCTRL  &kp RIGHT_SHIFT  &trans
+&trans  &trans           &trans       &kp PIPE   &kp GRAVE     &kp CARET                      &trans      &trans                  &trans  &trans  &trans    &trans     &trans           &trans
 &trans  &trans           &trans       &trans     &trans                       &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans    &trans     &trans           &trans
             >;
 
