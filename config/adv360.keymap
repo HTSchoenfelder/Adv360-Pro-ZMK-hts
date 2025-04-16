@@ -73,11 +73,11 @@
         right_side {
             label = "right_side";
             bindings = <
-&trans  &trans  &trans     &trans    &trans    &trans  &trans                                         &trans     &trans     &trans                &trans                 &trans            &trans             &trans
-&trans  &trans  &trans     &kp LALT  &kp RALT  &trans  &trans                                         &trans     &kp EQUAL  &kp RA(Y)             &kp MINUS              &kp RA(P)         &kp PAGE_UP        &trans
-&trans  &trans  &kp LCTRL  &kp LGUI  &mo 3     &mo 4   &trans  &trans  &trans      &trans  &trans     &trans     &kp LEFT   &kp DOWN              &kp UP                 &kp RIGHT         &kp PAGE_DOWN      &trans
-&trans  &trans  &trans     &kp ESC   &kp TAB   &trans                  &trans      &trans                        &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &trans  &trans     &trans    &trans            &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE             &trans                &trans                 &trans            &trans             &trans
+&trans  &trans  &trans     &trans    &trans    &trans  &trans                                         &trans     &trans     &trans      &trans      &trans            &trans             &trans
+&trans  &trans  &trans     &kp LALT  &kp RALT  &trans  &trans                                         &trans     &kp EQUAL  &kp RA(Y)   &kp MINUS   &kp RA(P)         &kp PAGE_UP        &trans
+&trans  &trans  &kp LCTRL  &kp LGUI  &mo 3     &mo 4   &trans  &trans  &trans      &trans  &trans     &trans     &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT         &kp PAGE_DOWN      &trans
+&trans  &trans  &trans     &kp ESC   &kp TAB   &trans                  &trans      &trans                        &trans     &kp LS(N9)  &kp LS(N0)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &trans  &trans     &trans    &trans            &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE             &trans      &trans      &trans            &trans             &trans
             >;
         };
 
