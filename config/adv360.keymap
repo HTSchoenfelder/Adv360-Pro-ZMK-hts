@@ -61,8 +61,8 @@
             display-name = "Default";
             bindings = <
 &none       &none  &none  &none  &none  &none  &tog 7                                                    &mo 5           &none  &none  &none      &none    &none      &none
-&kp ESC     &kp Q  &kp W  &kp E  &kp R  &kp T  &tog 8                                                    &none           &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BACKSLASH
-&kp TAB     &kp A  &kp S  &kp D  &kp F  &kp G  &tog 4          &none      &none      &none  &none        &none           &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
+&kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &tog 8                                                    &none           &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BACKSLASH
+&kp ESC     &kp A  &kp S  &kp D  &kp F  &kp G  &tog 4          &none      &none      &none  &none        &none           &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
 &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B                             &none      &none                               &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
 &mo 6       &none  &none  &none  &none         &hm LCTRL BSPC  &lt 1 DEL  &none      &none  &lt 2 ENTER  &hm LGUI SPACE         &none  &none      &none    &none      &mo 7
             >;
