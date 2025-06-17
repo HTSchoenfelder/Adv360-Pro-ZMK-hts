@@ -80,11 +80,11 @@
 
         right_side {
             bindings = <
-&trans  &trans    &trans     &trans    &trans    &trans  &trans                                         &trans     &trans      &trans             &trans            &trans             &trans  &trans
-&trans  &trans    &trans     &trans    &trans    &trans  &trans                                         &trans     &kp HOME    &kp RA(PAGE_DOWN)  &kp PAGE_UP       &kp RA(END)        &trans  &trans
-&trans  &kp LALT  &kp LCTRL  &kp LGUI  &kp RALT  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &kp LEFT    &kp DOWN           &kp UP            &kp RIGHT          &trans  &trans
-&trans  &mo 4     &mo 5      &kp ESC   &kp TAB   &mo 4                   &trans      &trans                        &kp LS(N9)  &kp LS(N0)         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
-&trans  &trans    &trans     &trans    &trans            &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE              &trans             &trans            &trans             &trans  &trans
+&trans  &trans    &trans     &trans    &trans    &trans  &trans                                         &trans     &trans      &trans             &trans            &trans             &trans         &trans
+&trans  &trans    &trans     &trans    &trans    &trans  &trans                                         &trans     &kp HOME    &kp RA(PAGE_DOWN)  &kp PAGE_UP       &kp RA(END)        &trans         &trans
+&trans  &kp LALT  &kp LCTRL  &kp LGUI  &kp RALT  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &kp LEFT    &kp DOWN           &kp UP            &kp RIGHT          &kp LS(MINUS)  &trans
+&trans  &mo 4     &mo 5      &kp ESC   &kp TAB   &mo 4                   &trans      &trans                        &kp LS(N9)  &kp LS(N0)         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS      &trans
+&trans  &trans    &trans     &trans    &trans            &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE              &trans             &trans            &trans             &trans         &trans
             >;
         };
 
@@ -93,7 +93,7 @@
 &trans  &trans      &trans         &trans      &trans         &trans      &trans                                              &trans  &trans  &trans    &trans    &trans     &trans    &trans
 &trans  &kp RS(N1)  &kp RS(N2)     &kp RS(N3)  &kp RS(N4)     &kp RS(N5)  &trans                                              &trans  &trans  &trans    &trans    &trans     &trans    &trans
 &trans  &kp RA(Q)   &kp RA(S)      &kp LS(N8)  &kp LS(N7)     &kp LS(N6)  &trans         &trans   &trans      &trans  &trans  &trans  &trans  &kp RALT  &kp LGUI  &kp LCTRL  &kp LALT  &trans
-&trans  &kp GRAVE   &kp RS(GRAVE)  &kp MINUS   &kp LS(MINUS)  &kp EQUAL                           &trans      &trans                  &tog 0  &tog 1    &trans    &trans     &trans    &trans
+&trans  &kp GRAVE   &kp RS(GRAVE)  &kp EQUAL   &kp LS(EQUAL)  &trans                              &trans      &trans                  &tog 0  &tog 1    &trans    &trans     &trans    &trans
 &trans  &trans      &trans         &trans      &trans                     &kp BACKSPACE  &kp DEL  &trans      &trans  &trans  &trans          &trans    &trans    &trans     &trans    &trans
             >;
         };
