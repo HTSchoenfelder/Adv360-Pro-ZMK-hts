@@ -64,6 +64,11 @@
             bindings = <&kp RALT>;
             key-positions = <69 41>;
         };
+
+        combo_thumbs_lctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <65 70>;
+        };
     };
 
     keymap {
