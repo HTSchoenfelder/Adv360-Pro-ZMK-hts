@@ -60,11 +60,11 @@
         default {
             display-name = "Default";
             bindings = <
-&kp EQUAL   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &tog 6                                                    &mo 8           &kp NUMBER_6  &kp N7  &kp N8     &kp N9            &kp N0             &kp MINUS
-&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T   &tog 7                                                    &none           &kp Y         &kp U   &kp I      &kp O             &kp P              &kp BACKSLASH
-&kp ESC     &kp A         &kp S         &kp D         &kp F         &kp G   &tog 4          &none      &none      &none  &none        &none           &kp H         &kp J   &kp K      &kp L             &kp SEMI           &kp SINGLE_QUOTE
-&kp LSHIFT  &kp Z         &kp X         &kp C         &kp V         &kp B                              &none      &none                               &kp N         &kp M   &kp COMMA  &kp DOT           &kp SLASH          &kp RSHIFT
-&mo 5       &kp GRAVE     &kp CAPS      &kp LEFT      &kp RIGHT             &hm LCTRL BSPC  &lt 1 DEL  &none      &none  &lt 2 ENTER  &hm LGUI SPACE                &kp UP  &kp DOWN   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 6
+&kp EQUAL   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &tog 6                                                    &mo 8           &kp NUMBER_6  &kp N7  &kp N8     &kp N9   &kp N0     &kp MINUS
+&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T   &tog 7                                                    &none           &kp Y         &kp U   &kp I      &kp O    &kp P      &kp BACKSLASH
+&kp ESC     &kp A         &kp S         &kp D         &kp F         &kp G   &tog 4          &none      &none      &none  &none        &none           &kp H         &kp J   &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
+&kp LSHIFT  &kp Z         &kp X         &kp C         &kp V         &kp B                              &none      &none                               &kp N         &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
+&mo 5       &none         &none         &none         &none                 &hm LCTRL BSPC  &lt 1 DEL  &none      &none  &lt 2 ENTER  &hm LGUI SPACE                &none   &none      &none    &none      &mo 5
             >;
 
             label = "Base";
@@ -73,21 +73,21 @@
         right_side {
             label = "right_side";
             bindings = <
-&trans  &trans  &trans     &trans    &trans    &trans  &trans                                         &trans     &trans      &trans      &trans            &trans             &trans         &trans
-&trans  &trans  &trans     &kp LALT  &kp RALT  &trans  &trans                                         &trans     &kp EQUAL   &kp RA(Y)   &kp MINUS         &kp RA(P)          &kp PAGE_UP    &trans
-&trans  &mo 3   &kp LCTRL  &kp LGUI  &trans    &mo 4   &trans  &trans  &trans      &trans  &trans     &trans     &kp LEFT    &kp DOWN    &kp UP            &kp RIGHT          &kp PAGE_DOWN  &trans
-&trans  &trans  &trans     &kp ESC   &kp TAB   &trans                  &trans      &trans                        &kp LS(N9)  &kp LS(N0)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
-&trans  &trans  &trans     &trans    &trans            &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE              &trans      &trans            &trans             &trans         &trans
+&trans  &trans    &trans     &trans     &trans    &trans  &trans                                         &trans     &trans      &trans             &trans            &trans             &trans  &trans
+&trans  &trans    &trans     &trans     &trans    &trans  &trans                                         &trans     &kp HOME    &kp RA(PAGE_DOWN)  &kp PAGE_UP       &kp RA(END)        &trans  &trans
+&trans  &kp LALT  &kp LCTRL  &kp LMETA  &kp RALT  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &kp LEFT    &kp DOWN           &kp UP            &kp RIGHT          &trans  &trans
+&trans  &mo 3     &mo 4      &kp ESC    &kp TAB   &mo 3                   &trans      &trans                        &kp LS(N9)  &kp LS(N0)         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
+&trans  &trans    &trans     &trans     &trans            &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE              &trans             &trans            &trans             &trans  &trans
             >;
         };
 
         left_side {
             bindings = <
-&trans  &trans      &trans         &trans      &trans      &trans      &trans                                              &trans  &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &kp RS(N1)  &kp RS(N2)     &kp RS(N3)  &kp RS(N4)  &kp RS(N5)  &trans                                              &trans  &trans  &kp RALT  &kp LALT  &trans     &trans  &trans
-&trans  &kp RA(Q)   &kp RA(S)      &kp LS(N8)  &kp LS(N7)  &kp LS(N6)  &trans         &trans   &trans      &trans  &trans  &trans  &trans  &mo 3     &kp LGUI  &kp LCTRL  &trans  &trans
-&trans  &kp GRAVE   &kp RS(GRAVE)  &kp HOME    &kp END     &trans                              &trans      &trans                  &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans      &trans         &trans      &trans                  &kp BACKSPACE  &kp DEL  &trans      &trans  &trans  &trans          &trans    &trans    &trans     &trans  &trans
+&trans  &trans      &trans         &trans      &trans         &trans      &trans                                              &trans  &trans  &trans    &trans    &trans     &trans  &trans
+&trans  &kp RS(N1)  &kp RS(N2)     &kp RS(N3)  &kp RS(N4)     &kp RS(N5)  &trans                                              &trans  &trans  &kp RALT  &kp LALT  &trans     &trans  &trans
+&trans  &kp RA(Q)   &kp RA(S)      &kp LS(N8)  &kp LS(N7)     &kp LS(N6)  &trans         &trans   &trans      &trans  &trans  &trans  &trans  &mo 3     &kp LGUI  &kp LCTRL  &trans  &trans
+&trans  &kp GRAVE   &kp RS(GRAVE)  &kp MINUS   &kp LS(MINUS)  &kp EQUAL                           &trans      &trans                  &trans  &trans    &trans    &trans     &trans  &trans
+&trans  &trans      &trans         &trans      &trans                     &kp BACKSPACE  &kp DEL  &trans      &trans  &trans  &trans          &trans    &trans    &trans     &trans  &trans
             >;
 
             label = "left_side";
@@ -96,11 +96,11 @@
         numbers {
             label = "numbers";
             bindings = <
-&none  &none  &none      &none     &none  &none  &trans                                  &trans  &none      &none   &none   &none   &none      &none
-&none  &none  &none      &none     &none  &none  &trans                                  &trans  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH  &none
-&none  &none  &kp LCTRL  &kp LGUI  &none  &none  &trans  &none  &none      &none  &none  &trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp DOT    &none
-&none  &none  &none      &none     &none  &none                 &none      &none                 &kp ASTRK  &kp N1  &kp N2  &kp N3  &kp COMMA  &none
-&none  &none  &none      &none     &none         &none   &none  &none      &none  &none  &kp N0             &none   &none   &none   &none      &none
+&none  &none     &none      &none     &none     &none  &trans                                  &trans  &none       &none   &kp EQUAL  &kp SLASH  &kp ASTERISK  &none
+&none  &none     &none      &none     &none     &none  &trans                                  &trans  &none       &kp N7  &kp N8     &kp N9     &kp MINUS     &none
+&none  &kp LALT  &kp LCTRL  &kp LGUI  &kp RALT  &none  &trans  &none  &none      &none  &none  &trans  &kp PERIOD  &kp N4  &kp N5     &kp N6     &kp PLUS      &none
+&none  &none     &none      &none     &none     &none                 &none      &none                 &kp COMMA   &kp N1  &kp N2     &kp N3     &kp ENTER     &none
+&none  &none     &none      &none     &none            &none   &none  &none      &none  &none  &kp N0              &none   &none      &none      &none         &none
             >;
         };
 
