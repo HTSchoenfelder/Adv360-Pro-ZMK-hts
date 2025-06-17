@@ -60,23 +60,30 @@
         default {
             display-name = "Default";
             bindings = <
-&kp EQUAL   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &tog 6                                                    &mo 8           &kp NUMBER_6  &kp N7  &kp N8     &kp N9   &kp N0     &kp MINUS
-&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T   &tog 7                                                    &none           &kp Y         &kp U   &kp I      &kp O    &kp P      &kp BACKSLASH
-&kp ESC     &kp A         &kp S         &kp D         &kp F         &kp G   &tog 4          &none      &none      &none  &none        &none           &kp H         &kp J   &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
+&kp EQUAL   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &tog 7                                                    &mo 9           &kp NUMBER_6  &kp N7  &kp N8     &kp N9   &kp N0     &kp MINUS
+&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T   &tog 8                                                    &none           &kp Y         &kp U   &kp I      &kp O    &kp P      &kp BACKSLASH
+&kp ESC     &kp A         &kp S         &kp D         &kp F         &kp G   &tog 5          &none      &none      &none  &none        &none           &kp H         &kp J   &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
 &kp LSHIFT  &kp Z         &kp X         &kp C         &kp V         &kp B                              &none      &none                               &kp N         &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
-&mo 5       &none         &none         &none         &none                 &hm LCTRL BSPC  &lt 1 DEL  &none      &none  &lt 2 ENTER  &hm LGUI SPACE                &none   &none      &none    &none      &mo 5
+&mo 6       &none         &none         &none         &none                 &hm LCTRL BSPC  &lt 2 DEL  &none      &none  &lt 3 ENTER  &hm LGUI SPACE                &none   &none      &none    &none      &mo 6
             >;
+        };
 
-            label = "Base";
+        macos {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                        &trans                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                        &trans                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans      &trans                                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &kp LGUI  &trans  &trans      &trans  &trans  &kp LC(LA(LS(LGUI)))          &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         right_side {
-            label = "right_side";
             bindings = <
 &trans  &trans    &trans     &trans    &trans    &trans  &trans                                         &trans     &trans      &trans             &trans            &trans             &trans  &trans
 &trans  &trans    &trans     &trans    &trans    &trans  &trans                                         &trans     &kp HOME    &kp RA(PAGE_DOWN)  &kp PAGE_UP       &kp RA(END)        &trans  &trans
 &trans  &kp LALT  &kp LCTRL  &kp LGUI  &kp RALT  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &kp LEFT    &kp DOWN           &kp UP            &kp RIGHT          &trans  &trans
-&trans  &mo 3     &mo 4      &kp ESC   &kp TAB   &mo 3                   &trans      &trans                        &kp LS(N9)  &kp LS(N0)         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
+&trans  &mo 4     &mo 5      &kp ESC   &kp TAB   &mo 4                   &trans      &trans                        &kp LS(N9)  &kp LS(N0)         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
 &trans  &trans    &trans     &trans    &trans            &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE              &trans             &trans            &trans             &trans  &trans
             >;
         };
@@ -86,15 +93,12 @@
 &trans  &trans      &trans         &trans      &trans         &trans      &trans                                              &trans  &trans  &trans    &trans    &trans     &trans    &trans
 &trans  &kp RS(N1)  &kp RS(N2)     &kp RS(N3)  &kp RS(N4)     &kp RS(N5)  &trans                                              &trans  &trans  &trans    &trans    &trans     &trans    &trans
 &trans  &kp RA(Q)   &kp RA(S)      &kp LS(N8)  &kp LS(N7)     &kp LS(N6)  &trans         &trans   &trans      &trans  &trans  &trans  &trans  &kp RALT  &kp LGUI  &kp LCTRL  &kp LALT  &trans
-&trans  &kp GRAVE   &kp RS(GRAVE)  &kp MINUS   &kp LS(MINUS)  &kp EQUAL                           &trans      &trans                  &trans  &trans    &trans    &trans     &trans    &trans
+&trans  &kp GRAVE   &kp RS(GRAVE)  &kp MINUS   &kp LS(MINUS)  &kp EQUAL                           &trans      &trans                  &tog 0  &tog 1    &trans    &trans     &trans    &trans
 &trans  &trans      &trans         &trans      &trans                     &kp BACKSPACE  &kp DEL  &trans      &trans  &trans  &trans          &trans    &trans    &trans     &trans    &trans
             >;
-
-            label = "left_side";
         };
 
         numbers {
-            label = "numbers";
             bindings = <
 &none  &none     &none      &none     &none     &none  &trans                                  &trans  &none       &none   &kp EQUAL  &kp SLASH  &kp ASTERISK  &none
 &none  &none     &none      &none     &none     &none  &trans                                  &trans  &none       &kp N7  &kp N8     &kp N9     &kp MINUS     &none
@@ -110,10 +114,8 @@
 &none  &none  &none  &none  &none  &none  &trans                                  &trans     &none  &none           &mmv MOVE_UP    &none            &none      &none
 &none  &none  &none  &none  &none  &none  &trans  &none  &none      &none  &none  &trans     &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
 &none  &none  &none  &none  &none  &none                 &none      &none                    &none  &none           &mkp MCLK       &none            &none      &none
-&none  &none  &none  &none  &none         &tog 4  &none  &none      &none  &none  &mkp LCLK         &none           &none           &none            &none      &none
+&none  &none  &none  &none  &none         &tog 5  &none  &none      &none  &none  &mkp LCLK         &none           &none           &none            &none      &none
             >;
-
-            label = "Mouse";
         };
 
         fn {
@@ -139,19 +141,18 @@
         };
 
         no_home_row_mods {
-            label = "No Home Row Mods";
             display-name = "NoHomeRowMods";
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                              &trans     &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &trans                                                              &trans     &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &trans    &kp LCTRL  &kp LALT                  &kp LALT  &kp RCTRL  &trans     &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp LS(LA(LC(LGUI)))      &kp LGUI                        &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 6      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp RALT                  &kp RALT  &kp ENTER  &kp SPACE          &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mo 6
+&mo 7      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp RALT                  &kp RALT  &kp ENTER  &kp SPACE          &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mo 7
             >;
         };
 
         mod {
-            display-name = "Mod";
+            display-name = "mod";
             bindings = <
 &none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
