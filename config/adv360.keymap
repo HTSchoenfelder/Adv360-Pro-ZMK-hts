@@ -52,7 +52,29 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo_left_ralt {
+            bindings = <&kp RALT>;
+            key-positions = <66 32>;
+        };
+
+        combo_left_lgui {
+            bindings = <&kp LGUI>;
+            key-positions = <66 31>;
+        };
+
+        combo_left_lctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <66 30>;
+        };
+
+        combo_left_lalt {
+            bindings = <&kp LALT>;
+            key-positions = <66 30>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -80,39 +102,39 @@
 
         right_side {
             bindings = <
-&trans  &trans    &trans     &trans    &trans    &trans  &trans                                         &trans     &trans      &trans             &trans            &trans             &trans         &trans
-&trans  &trans    &trans     &trans    &trans    &trans  &trans                                         &trans     &kp HOME    &kp RA(PAGE_DOWN)  &kp PAGE_UP       &kp RA(END)        &trans         &trans
-&trans  &kp LALT  &kp LCTRL  &kp LGUI  &kp RALT  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &kp LEFT    &kp DOWN           &kp UP            &kp RIGHT          &kp LS(MINUS)  &trans
-&trans  &mo 4     &mo 5      &kp ESC   &kp TAB   &mo 4                   &trans      &trans                        &kp LS(N9)  &kp LS(N0)         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS      &trans
-&trans  &trans    &trans     &trans    &trans            &trans  &trans  &trans      &trans  &kp ENTER  &kp SPACE              &trans             &trans            &trans             &trans         &trans
+&none  &none  &none  &none    &none    &none  &none                                      &none      &none       &none              &none             &none              &none          &none
+&none  &none  &none  &none    &none    &none  &none                                      &none      &kp HOME    &kp RA(PAGE_DOWN)  &kp PAGE_UP       &kp RA(END)        &none          &none
+&none  &none  &none  &none    &none    &none  &none  &none  &none      &none  &none      &none      &kp LEFT    &kp DOWN           &kp UP            &kp RIGHT          &kp LS(MINUS)  &none
+&none  &mo 4  &mo 5  &kp ESC  &kp TAB  &mo 4                &none      &none                        &kp LS(N9)  &kp LS(N0)         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS      &none
+&none  &none  &none  &none    &none           &none  &none  &none      &none  &kp ENTER  &kp SPACE              &none              &none             &none              &none          &none
             >;
         };
 
         left_side {
             bindings = <
-&trans  &trans      &trans         &trans      &trans         &trans      &trans                                              &trans  &trans  &trans    &trans    &trans     &trans    &trans
-&trans  &kp RS(N1)  &kp RS(N2)     &kp RS(N3)  &kp RS(N4)     &kp RS(N5)  &trans                                              &trans  &trans  &trans    &trans    &trans     &trans    &trans
-&trans  &kp RA(Q)   &kp RA(S)      &kp LS(N8)  &kp LS(N7)     &kp LS(N6)  &trans         &trans   &trans      &trans  &trans  &trans  &trans  &kp RALT  &kp LGUI  &kp LCTRL  &kp LALT  &trans
-&trans  &kp GRAVE   &kp RS(GRAVE)  &kp EQUAL   &kp LS(EQUAL)  &trans                              &trans      &trans                  &tog 0  &tog 1    &trans    &trans     &trans    &trans
-&trans  &trans      &trans         &trans      &trans                     &kp BACKSPACE  &kp DEL  &trans      &trans  &trans  &trans          &trans    &trans    &trans     &trans    &trans
+&none  &none       &none          &none       &none          &none       &none                                            &none  &none   &none     &none     &none      &none     &none
+&none  &kp RS(N1)  &kp RS(N2)     &kp RS(N3)  &kp RS(N4)     &kp RS(N5)  &none                                            &none  &none   &none     &none     &none      &none     &none
+&none  &kp RA(Q)   &kp RA(S)      &kp LS(N8)  &kp LS(N7)     &kp LS(N6)  &none          &none    &none      &none  &none  &none  &none   &kp RALT  &kp LGUI  &kp LCTRL  &kp LALT  &none
+&none  &kp GRAVE   &kp RS(GRAVE)  &kp EQUAL   &kp LS(EQUAL)  &none                               &none      &none                &tog 0  &tog 1    &none     &none      &none     &none
+&none  &none       &none          &none       &none                      &kp BACKSPACE  &kp DEL  &none      &none  &none  &none          &none     &none     &none      &none     &none
             >;
         };
 
         numbers {
             bindings = <
-&none  &none     &none      &none     &none     &none  &trans                                  &trans  &none       &none   &kp EQUAL  &kp SLASH  &kp ASTERISK  &none
-&none  &none     &none      &none     &none     &none  &trans                                  &trans  &none       &kp N7  &kp N8     &kp N9     &kp MINUS     &none
-&none  &kp LALT  &kp LCTRL  &kp LGUI  &kp RALT  &none  &trans  &none  &none      &none  &none  &trans  &kp PERIOD  &kp N4  &kp N5     &kp N6     &kp PLUS      &none
-&none  &none     &none      &none     &none     &none                 &none      &none                 &kp COMMA   &kp N1  &kp N2     &kp N3     &kp ENTER     &none
-&none  &none     &none      &none     &none            &none   &none  &none      &none  &none  &kp N0              &none   &none      &none      &none         &none
+&none  &none     &none      &none     &none     &none  &none                                  &none   &none       &none   &kp EQUAL  &kp SLASH  &kp ASTERISK  &none
+&none  &none     &none      &none     &none     &none  &none                                  &none   &none       &kp N7  &kp N8     &kp N9     &kp MINUS     &none
+&none  &kp LALT  &kp LCTRL  &kp LGUI  &kp RALT  &none  &none  &none  &none      &none  &none  &none   &kp PERIOD  &kp N4  &kp N5     &kp N6     &kp PLUS      &none
+&none  &none     &none      &none     &none     &none                &none      &none                 &kp COMMA   &kp N1  &kp N2     &kp N3     &kp ENTER     &none
+&none  &none     &none      &none     &none            &none  &none  &none      &none  &none  &kp N0              &none   &none      &none      &none         &none
             >;
         };
 
         mouse {
             bindings = <
-&none  &none  &none  &none  &none  &none  &trans                                  &trans     &none  &none           &none           &none            &none      &none
-&none  &none  &none  &none  &none  &none  &trans                                  &trans     &none  &none           &mmv MOVE_UP    &none            &none      &none
-&none  &none  &none  &none  &none  &none  &trans  &none  &none      &none  &none  &trans     &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
+&none  &none  &none  &none  &none  &none  &none                                   &none      &none  &none           &none           &none            &none      &none
+&none  &none  &none  &none  &none  &none  &none                                   &none      &none  &none           &mmv MOVE_UP    &none            &none      &none
+&none  &none  &none  &none  &none  &none  &none   &none  &none      &none  &none  &none      &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
 &none  &none  &none  &none  &none  &none                 &none      &none                    &none  &none           &mkp MCLK       &none            &none      &none
 &none  &none  &none  &none  &none         &tog 5  &none  &none      &none  &none  &mkp LCLK         &none           &none           &none            &none      &none
             >;
@@ -132,11 +154,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans     &trans  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans     &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                     &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp KP_N0          &trans      &trans        &kp KP_DOT     &trans           &trans
+&none  &none  &none  &none  &none  &none  &none                                  &none      &none  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none      &none  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none      &none  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
+&none  &none  &none  &none  &none  &none                &none      &none                    &none  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &kp KP_N0         &none       &none         &kp KP_DOT     &none            &none
             >;
         };
 
@@ -154,7 +176,7 @@
         mod {
             display-name = "mod";
             bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &none  &none       &none       &none  &none  &none
+&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &mo 9            &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
 &studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
