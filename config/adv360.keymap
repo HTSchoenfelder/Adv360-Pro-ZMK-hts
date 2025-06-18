@@ -110,7 +110,7 @@
 &none  &none       &none          &none       &none          &none       &none                                            &none  &none  &none     &none     &none      &none     &none
 &none  &kp RS(N1)  &kp RS(N2)     &kp RS(N3)  &kp RS(N4)     &kp RS(N5)  &none                                            &none  &none  &none     &none     &none      &none     &none
 &none  &kp RA(Q)   &kp RA(S)      &kp LS(N8)  &kp LS(N7)     &kp LS(N6)  &none          &none    &none      &none  &none  &none  &none  &kp RALT  &kp LGUI  &kp LCTRL  &kp LALT  &none
-&none  &kp GRAVE   &kp RS(GRAVE)  &kp EQUAL   &kp LS(EQUAL)  &none                               &none      &none                &to 2  &to 0     &none     &none      &none     &none
+&none  &kp GRAVE   &kp RS(GRAVE)  &kp EQUAL   &kp LS(EQUAL)  &none                               &none      &none                &to 0  &to 1     &none     &none      &none     &none
 &none  &none       &none          &none       &none                      &kp BACKSPACE  &kp DEL  &none      &none  &none  &none         &none     &none     &none      &none     &none
             >;
         };
