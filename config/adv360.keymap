@@ -107,7 +107,7 @@
         left {
             bindings = <
 &none  &none     &none      &none     &none     &none  &none                                      &none      &none       &none       &none             &none              &none          &none
-&none  &none     &none      &none     &none     &none  &none                                      &none      &kp RA(Y)   &none       &none             &kp RA(P)          &none          &none
+&none  &none     &none      &none     &none     &none  &none                                      &none      &kp RA(Y)   &none       &none             &none              &kp RA(P)      &none
 &none  &kp LALT  &kp LCTRL  &kp LGUI  &kp RALT  &mo 4  &none  &none  &none      &none  &none      &none      &kp LEFT    &kp DOWN    &kp UP            &kp RIGHT          &kp LS(MINUS)  &none
 &none  &mo 7     &mo 6      &kp ESC   &kp TAB   &mo 5                &none      &none                        &kp LS(N9)  &kp LS(N0)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS      &none
 &none  &none     &none      &none     &none            &none  &none  &none      &none  &kp ENTER  &kp SPACE              &none       &none             &none              &none          &none
