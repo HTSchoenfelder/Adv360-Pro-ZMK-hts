@@ -65,8 +65,8 @@
             key-positions = <69 41>;
         };
 
-        combo_thumbs_lctrl {
-            bindings = <&kp LCTRL>;
+        combo_thumbs_hyper {
+            bindings = <&kp LA(LC(LG(LGUI)))>;
             key-positions = <65 70>;
         };
     };
