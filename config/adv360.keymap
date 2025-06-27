@@ -146,11 +146,11 @@
 
         right {
             bindings = <
-&none  &none             &none          &none       &none          &none       &none                                            &none  &none  &none                            &none                           &none                       &none                       &none
-&none  &kp RA(Q)         &kp RS(N2)     &kp RS(N3)  &kp RS(N4)     &kp RS(N5)  &none                                            &none  &none  &sticky_key_modifiers LA(LCTRL)  &sticky_key_modifiers LA(LGUI)  &none                       &none                       &none
-&none  &kp LS(NUMBER_1)  &kp RA(S)      &kp LS(N8)  &kp LS(N7)     &kp LS(N6)  &none          &none    &none      &none  &none  &none  &none  &sticky_key_modifiers LCTRL      &sticky_key_modifiers LGUI      &sticky_key_modifiers LALT  &sticky_key_modifiers RALT  &none
-&none  &kp GRAVE         &kp RS(GRAVE)  &kp EQUAL   &kp LS(EQUAL)  &none                               &none      &none                &none  &sticky_key_modifiers LG(LCTRL)  &none                           &none                       &none                       &none
-&none  &none             &none          &none       &none                      &kp BACKSPACE  &kp DEL  &none      &none  &none  &none         &none                            &none                           &none                       &none                       &none
+&none  &none             &none          &none       &none          &none       &none                                            &none  &none  &none          &none         &none     &none     &none
+&none  &kp RA(Q)         &kp RS(N2)     &kp RS(N3)  &kp RS(N4)     &kp RS(N5)  &none                                            &none  &none  &sk LA(LCTRL)  &sk LA(LGUI)  &none     &none     &none
+&none  &kp LS(NUMBER_1)  &kp RA(S)      &kp LS(N8)  &kp LS(N7)     &kp LS(N6)  &none          &none    &none      &none  &none  &none  &none  &sk LCTRL      &sk LGUI      &sk LALT  &sk RALT  &none
+&none  &kp GRAVE         &kp RS(GRAVE)  &kp EQUAL   &kp LS(EQUAL)  &none                               &none      &none                &none  &sk LG(LCTRL)  &none         &none     &none     &none
+&none  &none             &none          &none       &none                      &kp BACKSPACE  &kp DEL  &none      &none  &none  &none         &none          &none         &none     &none     &none
             >;
         };
 
