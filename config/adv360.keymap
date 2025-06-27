@@ -50,15 +50,6 @@
             hold-trigger-key-positions = <15 16 17 18 29 30 31 32 47 48 49 50 19 33 51>;
             require-prior-idle-ms = <200>;
         };
-
-        sticky_key_modifiers: sticky_key_modifiers {
-            compatible = "zmk,behavior-sticky-key";
-            label = "STICKY_KEY_MODIFIERS";
-            bindings = <&kp>;
-            #binding-cells = <1>;
-            release-after-ms = <1000>;
-            ignore-modifiers;
-        };
     };
 
     combos {
