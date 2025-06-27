@@ -85,6 +85,13 @@
             bindings = <&kp LS(S) &kp LS(T) &kp LS(A) &kp LS(C) &kp LS(K) &kp LS(I) &kp LS(T)>;
             label = "SNIPPET_STACKIT";
         };
+
+        snippet_profile_1: snippet_profile_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &bt BT_SEL 0>;
+            label = "SNIPPET_PROFILE_1";
+        };
     };
 
     keymap {
