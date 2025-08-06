@@ -110,18 +110,18 @@
 &none   &none      &none  &none    &none    &none          &none                                      &none             &none           &none            &none                 &none                  &none          &none
 &none   &none      &none  &none    &none    &none          &none                                      &none             &kp RA(Y)       &none            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RA(P)      &none
 &none   &kp LCTRL  &none  &none    &mo 3    &mo 4          &none  &none  &none      &none  &none      &none             &kp LEFT        &kp DOWN         &kp UP                &kp RIGHT              &kp MINUS      &none
-&trans  &mo 6      &mo 5  &kp ESC  &kp TAB  &kp LG(GRAVE)                &none      &none                               &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(MINUS)  &trans
+&trans  &mo 6      &mo 5  &kp ESC  &kp TAB  &kp LG(TILDE)                &none      &none                               &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(MINUS)  &trans
 &none   &none      &none  &none    &none                   &none  &none  &none      &none  &kp ENTER  &kp LA(LC(LGUI))                  &none            &none                 &none                  &none          &none
             >;
         };
 
         right {
             bindings = <
-&none   &none             &none       &none       &none          &none       &none                                            &none  &none  &none          &none         &none  &none     &none
-&none   &kp RA(Q)         &kp RS(N2)  &kp RS(N3)  &kp RS(N4)     &kp RS(N5)  &none                                            &none  &none  &sk LA(LCTRL)  &sk LC(RALT)  &none  &none     &none
-&none   &kp LS(NUMBER_1)  &kp RA(S)   &kp LS(N8)  &kp LS(N7)     &kp LS(N6)  &none          &none    &none      &none  &none  &none  &none  &sk LALT       &sk RALT      &none  &kp LGUI  &none
-&trans  &kp LS(GRAVE)     &kp GRAVE   &kp EQUAL   &kp LS(EQUAL)  &none                               &none      &none                &none  &sk LG(LALT)   &sk LG(RALT)  &none  &none     &trans
-&none   &none             &none       &none       &none                      &kp BACKSPACE  &kp DEL  &none      &none  &none  &none         &none          &none         &none  &none     &none
+&none   &none            &none        &none      &none       &none        &none                                            &none  &none      &none          &none         &none  &none     &none
+&none   &kp RA(Q)        &kp AT_SIGN  &none      &none       &none        &none                                            &none  &sk LALT   &sk LA(LCTRL)  &sk LG(LALT)  &none  &none     &none
+&none   &kp EXCLAMATION  &kp RA(S)    &kp HASH   &kp DOLLAR  &kp PERCENT  &none          &none    &none      &none  &none  &none  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &none  &kp LGUI  &none
+&trans  &kp TILDE        &kp GRAVE    &kp EQUAL  &kp PLUS    &none                                &none      &none                &sk RALT   &sk LC(RALT)   &sk LG(RALT)  &none  &none     &trans
+&none   &none            &none        &none      &none                    &kp BACKSPACE  &kp DEL  &none      &none  &none  &none             &none          &none         &none  &none     &none
             >;
         };
 
