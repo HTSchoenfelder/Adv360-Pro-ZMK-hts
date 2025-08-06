@@ -107,11 +107,11 @@
 
         left {
             bindings = <
-&none   &none      &none  &none    &none    &none          &none                                      &none             &none           &none            &none                 &none                  &none          &none
-&none   &none      &none  &none    &none    &none          &none                                      &none             &kp RA(Y)       &none            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RA(P)      &none
-&none   &kp LCTRL  &none  &none    &mo 3    &mo 4          &none  &none  &none      &none  &none      &none             &kp LEFT        &kp DOWN         &kp UP                &kp RIGHT              &kp MINUS      &none
-&trans  &mo 6      &mo 5  &kp ESC  &kp TAB  &kp LG(TILDE)                &none      &none                               &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(MINUS)  &trans
-&none   &none      &none  &none    &none                   &none  &none  &none      &none  &kp ENTER  &kp LA(LC(LGUI))                  &none            &none                 &none                  &none          &none
+&none   &none      &none       &none    &none    &none          &none                                      &none             &none           &none            &none                 &none                  &none          &none
+&none   &none      &none       &none    &none    &none          &none                                      &none             &kp RA(Y)       &none            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RA(P)      &none
+&none   &kp LCTRL  &kp LSHIFT  &mo 4    &mo 3    &none          &none  &none  &none      &none  &none      &none             &kp LEFT        &kp DOWN         &kp UP                &kp RIGHT              &kp MINUS      &none
+&trans  &mo 6      &mo 5       &kp ESC  &kp TAB  &kp LG(TILDE)                &none      &none                               &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LS(MINUS)  &trans
+&none   &none      &none       &none    &none                   &none  &none  &none      &none  &kp ENTER  &kp LA(LC(LGUI))                  &none            &none                 &none                  &none          &none
             >;
         };
 
