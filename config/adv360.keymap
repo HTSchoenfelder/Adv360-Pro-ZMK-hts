@@ -26,6 +26,7 @@
             bindings = <&kp>, <&kp>;
 
             quick-tap-ms = <250>;
+            require-prior-idle-ms = <200>;
         };
 
         hm_left: hm_left {
