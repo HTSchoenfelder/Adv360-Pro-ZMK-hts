@@ -6,7 +6,11 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&lt { retro-tap; };
+&lt {
+    retro-tap;
+    tapping-term-ms = <150>;
+    flavor = "hold-preferred";
+};
 
 / {
     behaviors {
