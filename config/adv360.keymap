@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &lt {
-    retro-tap;
     tapping-term-ms = <150>;
     flavor = "balanced";
 };
