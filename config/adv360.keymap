@@ -100,51 +100,41 @@
         default {
             display-name = "Default";
             bindings = <
-&none       &none  &none  &none  &none  &none  &tog 8                                                               &mo 9           &none  &none  &none      &none    &none      &none
+&none       &none  &none  &none  &none  &none  &tog 7                                                               &mo 8           &none  &none  &none      &none    &none      &none
 &kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &to 1                                                                &to 0           &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BACKSLASH
-&kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &to 5                &none      &none         &none     &none        &to 10          &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
+&kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &to 4                &none      &none         &none     &none        &to 9           &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
 &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B                                  &none         &none                                  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
-&mo 7       &none  &none  &none  &none         &hm LCTRL BACKSPACE  &lt 1 DEL  &kp LALT      &kp RALT  &lt 2 ENTER  &hm LGUI SPACE         &none  &none      &none    &none      &mo 7
+&mo 6       &none  &none  &none  &none         &hm LCTRL BACKSPACE  &lt 1 DEL  &kp LALT      &kp RALT  &lt 2 ENTER  &hm LGUI SPACE         &none  &none      &none    &none      &mo 6
             >;
         };
 
         left {
             bindings = <
-&none   &none       &none      &none     &none    &none          &none                                        &none      &none           &none            &none             &none              &none      &none
-&none   &kp N1      &kp N2     &kp N3    &kp N4   &kp N5         &none                                        &none      &kp N6          &kp N7           &kp N8            &kp N9             &kp N0     &none
-&none   &kp LSHIFT  &kp LCTRL  &kp LALT  &mo 3    &mo 4          &none  &none  &none       &none   &none      &none      &kp LEFT        &kp DOWN         &kp UP            &kp RIGHT          &kp MINUS  &none
-&trans  &mo 6       &mo 5      &kp ESC   &kp TAB  &kp LG(TILDE)                &none       &none                         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDER  &trans
-&none   &none       &none      &none     &none                   &none  &none  &trans      &trans  &kp ENTER  &kp SPACE                  &none            &none             &none              &none      &none
+&none   &none       &none      &none     &none     &none  &none                                        &none      &none             &none              &none      &none      &none  &none
+&none   &none       &none      &none     &none     &mo 5  &none                                        &none      &kp HOME          &kp PG_DN          &kp PG_UP  &kp END    &none  &none
+&none   &sk LALT    &none      &kp ESC   &kp TAB   &mo 3  &none  &none  &none       &none   &none      &none      &kp LEFT          &kp DOWN           &kp UP     &kp RIGHT  &none  &none
+&trans  &kp LSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &mo 4                &none       &none                         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC   &kp RBRC   &none  &trans
+&none   &none       &none      &none     &none            &none  &none  &trans      &trans  &kp ENTER  &kp SPACE                    &none              &none      &none      &none  &none
             >;
         };
 
         right {
             bindings = <
-&none   &none            &none      &none      &none       &none        &none                                              &none  &none      &none          &none         &none      &none       &none
-&none   &kp N1           &kp N2     &kp N3     &kp N4      &kp N5       &none                                              &none  &sk LALT   &sk LA(LCTRL)  &sk LG(LALT)  &none      &none       &none
-&none   &kp EXCLAMATION  &kp RA(S)  &kp HASH   &kp DOLLAR  &kp PERCENT  &none          &none    &none       &none   &none  &none  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LCTRL  &kp LSHIFT  &none
-&trans  &kp TILDE        &kp GRAVE  &kp EQUAL  &kp PLUS    &none                                &none       &none                 &sk RALT   &sk LC(RALT)   &sk LG(RALT)  &none      &none       &trans
-&none   &none            &none      &none      &none                    &kp BACKSPACE  &kp DEL  &trans      &trans  &none  &none             &none          &none         &none      &none       &none
+&none      &none            &none      &none     &none       &none        &none                                              &none  &none      &none             &none         &none     &none              &none
+&kp TILDE  &kp EXCLAMATION  &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT  &none                                              &none  &kp CARET  &kp AMPERSAND     &kp ASTERISK  &kp LPAR  &kp RPAR           &kp UNDER
+&kp GRAVE  &kp N1           &kp N2     &kp N3    &kp N4      &kp N5       &none          &none    &none       &none   &none  &none  &kp N6     &kp N7            &kp N8        &kp N9    &kp N0             &kp MINUS
+&trans     &kp LSHIFT       &kp LCTRL  &kp LGUI  &kp LALT    &kp PLUS                             &none       &none                 &kp EQUAL  &kp LEFT_BRACKET  &kp LBRC      &kp RBRC  &kp RIGHT_BRACKET  &trans
+&none      &none            &none      &none     &none                    &kp BACKSPACE  &kp DEL  &trans      &trans  &none  &none             &none             &none         &none     &none              &none
             >;
         };
 
         numbers {
             bindings = <
-&none   &none       &none      &none     &none  &none  &none                                  &none   &none       &none   &kp EQUAL  &kp SLASH  &kp ASTERISK  &none
-&none   &none       &none      &none     &none  &none  &none                                  &none   &none       &kp N7  &kp N8     &kp N9     &kp MINUS     &none
-&none   &kp LSHIFT  &kp LCTRL  &kp LALT  &none  &none  &none  &none  &none      &none  &none  &none   &kp PERIOD  &kp N4  &kp N5     &kp N6     &kp PLUS      &none
-&trans  &none       &none      &none     &none  &none                &none      &none                 &kp COMMA   &kp N1  &kp N2     &kp N3     &kp ENTER     &none
-&none   &none       &none      &none     &none         &none  &none  &none      &none  &none  &kp N0              &none   &none      &none      &none         &none
-            >;
-        };
-
-        additional {
-            bindings = <
-&trans  &trans     &trans     &trans    &trans  &trans  &trans                                      &trans  &trans    &trans       &trans         &trans   &trans  &trans
-&trans  &trans     &trans     &trans    &trans  &trans  &trans                                      &trans  &trans    &trans       &trans         &trans   &trans  &trans
-&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &trans  &trans
-&trans  &trans     &trans     &trans    &trans  &trans                  &trans      &trans                  &trans    &trans       &trans         &trans   &trans  &trans
-&trans  &trans     &trans     &trans    &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans       &trans         &trans   &trans  &trans
+&none   &none      &none      &none     &none     &none  &none                                  &none   &none       &none   &kp EQUAL  &kp SLASH  &kp ASTERISK  &none
+&none   &none      &none      &none     &none     &none  &none                                  &none   &none       &kp N7  &kp N8     &kp N9     &kp MINUS     &none
+&none   &none      &none      &none     &none     &none  &none  &none  &none      &none  &none  &none   &kp PERIOD  &kp N4  &kp N5     &kp N6     &kp PLUS      &none
+&trans  &kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT  &none                &none      &none                 &kp COMMA   &kp N1  &kp N2     &kp N3     &kp ENTER     &none
+&none   &none      &none      &none     &none            &none  &none  &none      &none  &none  &kp N0              &none   &none      &none      &none         &none
             >;
         };
 
@@ -154,7 +144,7 @@
 &none   &none  &none  &none  &none  &none  &none                                   &none      &none  &none           &mmv MOVE_UP    &none            &none      &none
 &none   &none  &none  &none  &none  &none  &none   &none  &none      &none  &none  &none      &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &none
 &trans  &none  &none  &none  &none  &none                 &none      &none                    &none  &none           &mkp MCLK       &none            &none      &trans
-&none   &none  &none  &none  &none         &tog 5  &none  &none      &none  &none  &mkp LCLK         &none           &none           &none            &none      &none
+&none   &none  &none  &none  &none         &tog 4  &none  &none      &none  &none  &mkp LCLK         &none           &none           &none            &none      &none
             >;
         };
 
@@ -193,7 +183,7 @@
         mod {
             display-name = "mod";
             bindings = <
-&none           &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &mo 9            &none  &none       &none       &none  &none  &none
+&none           &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &mo 8            &none  &none       &none       &none  &none  &none
 &none           &snippet_profile_2  &snippet_profile_2  &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
 &studio_unlock  &none               &none               &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
 &trans          &none               &none               &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
@@ -208,7 +198,7 @@
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &trans                                                              &trans     &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &trans    &kp LCTRL  &kp LALT                  &kp LALT  &kp RCTRL  &trans     &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp LS(LA(LC(LGUI)))      &kp LGUI                        &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 8      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp RALT                  &kp RALT  &kp ENTER  &kp SPACE          &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mo 8
+&mo 7      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp RALT                  &kp RALT  &kp ENTER  &kp SPACE          &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mo 7
             >;
         };
     };
