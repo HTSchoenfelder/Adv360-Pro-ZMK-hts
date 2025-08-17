@@ -100,31 +100,31 @@
         default {
             display-name = "Default";
             bindings = <
-&none       &none  &none  &none  &none  &none  &tog 8                                                         &mo 9           &none  &none  &none      &none    &none      &none
-&kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &to 1                                                          &to 0           &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BACKSLASH
-&kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &to 5                &none      &none      &none  &none        &to 10          &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
-&kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B                                  &none      &none                               &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
-&mo 7       &none  &none  &none  &none         &hm LCTRL BACKSPACE  &lt 1 DEL  &none      &none  &lt 2 ENTER  &hm LGUI SPACE         &none  &none      &none    &none      &mo 7
+&none       &none  &none  &none  &none  &none  &tog 8                                                               &mo 9           &none  &none  &none      &none    &none      &none
+&kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &to 1                                                                &to 0           &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BACKSLASH
+&kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &to 5                &none      &none         &none     &none        &to 10          &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
+&kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B                                  &none         &none                                  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
+&mo 7       &none  &none  &none  &none         &hm LCTRL BACKSPACE  &lt 1 DEL  &kp LALT      &kp RALT  &lt 2 ENTER  &hm LGUI SPACE         &none  &none      &none    &none      &mo 7
             >;
         };
 
         left {
             bindings = <
-&none   &none       &none      &none     &none    &none          &none                                      &none      &none           &none            &none                 &none                  &none      &none
-&none   &none       &none      &none     &none    &none          &none                                      &none      &kp RA(Y)       &none            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RA(P)  &none
-&none   &kp LSHIFT  &kp LCTRL  &kp LALT  &mo 3    &mo 4          &none  &none  &none      &none  &none      &none      &kp LEFT        &kp DOWN         &kp UP                &kp RIGHT              &kp MINUS  &none
-&trans  &mo 6       &mo 5      &kp ESC   &kp TAB  &kp LG(TILDE)                &none      &none                        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER  &trans
-&none   &none       &none      &none     &none                   &none  &none  &none      &none  &kp ENTER  &kp SPACE                  &none            &none                 &none                  &none      &none
+&none   &none       &none      &none     &none    &none          &none                                        &none      &none           &none            &none             &none              &none      &none
+&none   &kp N1      &kp N2     &kp N3    &kp N4   &kp N5         &none                                        &none      &kp N6          &kp N7           &kp N8            &kp N9             &kp N0     &none
+&none   &kp LSHIFT  &kp LCTRL  &kp LALT  &mo 3    &mo 4          &none  &none  &none       &none   &none      &none      &kp LEFT        &kp DOWN         &kp UP            &kp RIGHT          &kp MINUS  &none
+&trans  &mo 6       &mo 5      &kp ESC   &kp TAB  &kp LG(TILDE)                &none       &none                         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDER  &trans
+&none   &none       &none      &none     &none                   &none  &none  &trans      &trans  &kp ENTER  &kp SPACE                  &none            &none             &none              &none      &none
             >;
         };
 
         right {
             bindings = <
-&none   &none            &none        &none      &none       &none        &none                                            &none  &none      &none          &none         &none      &none       &none
-&none   &kp RA(Q)        &kp AT_SIGN  &none      &none       &none        &none                                            &none  &sk LALT   &sk LA(LCTRL)  &sk LG(LALT)  &none      &none       &none
-&none   &kp EXCLAMATION  &kp RA(S)    &kp HASH   &kp DOLLAR  &kp PERCENT  &none          &none    &none      &none  &none  &none  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LCTRL  &kp LSHIFT  &none
-&trans  &kp TILDE        &kp GRAVE    &kp EQUAL  &kp PLUS    &none                                &none      &none                &sk RALT   &sk LC(RALT)   &sk LG(RALT)  &none      &none       &trans
-&none   &none            &none        &none      &none                    &kp BACKSPACE  &kp DEL  &none      &none  &none  &none             &none          &none         &none      &none       &none
+&none   &none            &none      &none      &none       &none        &none                                              &none  &none      &none          &none         &none      &none       &none
+&none   &kp N1           &kp N2     &kp N3     &kp N4      &kp N5       &none                                              &none  &sk LALT   &sk LA(LCTRL)  &sk LG(LALT)  &none      &none       &none
+&none   &kp EXCLAMATION  &kp RA(S)  &kp HASH   &kp DOLLAR  &kp PERCENT  &none          &none    &none       &none   &none  &none  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LCTRL  &kp LSHIFT  &none
+&trans  &kp TILDE        &kp GRAVE  &kp EQUAL  &kp PLUS    &none                                &none       &none                 &sk RALT   &sk LC(RALT)   &sk LG(RALT)  &none      &none       &trans
+&none   &none            &none      &none      &none                    &kp BACKSPACE  &kp DEL  &trans      &trans  &none  &none             &none          &none         &none      &none       &none
             >;
         };
 
