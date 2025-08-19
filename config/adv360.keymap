@@ -110,11 +110,11 @@
 
         left {
             bindings = <
-&none   &none       &none      &none     &none    &none     &none                                        &none      &none             &none              &none         &none      &none     &none
-&none   &none       &none      &none     &none    &none     &none                                        &none      &kp CARET         &kp AMPERSAND      &kp ASTERISK  &kp LPAR   &kp RPAR  &none
-&none   &sk LALT    &none      &kp LGUI  &mo 3    &mo 4     &none  &none  &none       &none   &none      &none      &none             &kp MINUS          &kp UNDER     &kp EQUAL  &kp PLUS  &none
-&trans  &kp LSHIFT  &kp LCTRL  &kp ESC   &kp TAB  &kp LALT                &none       &none                         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC      &kp RBRC   &none     &trans
-&none   &none       &none      &none     &none              &none  &none  &trans      &trans  &kp ENTER  &kp SPACE                    &none              &none         &none      &none     &none
+&none   &none       &none      &none     &none    &none     &none                                        &none             &none             &none              &none         &none      &none     &none
+&none   &none       &none      &none     &none    &none     &none                                        &none             &kp CARET         &kp AMPERSAND      &kp ASTERISK  &kp LPAR   &kp RPAR  &none
+&none   &sk LALT    &sk LCTRL  &sk LGUI  &mo 3    &mo 4     &none  &none  &none       &none   &none      &none             &none             &kp MINUS          &kp UNDER     &kp EQUAL  &kp PLUS  &none
+&trans  &sk LSHIFT  &kp LCTRL  &kp ESC   &kp TAB  &kp LALT                &none       &none                                &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC      &kp RBRC   &none     &trans
+&none   &none       &none      &none     &none              &none  &none  &trans      &trans  &kp ENTER  &kp LA(LC(LGUI))                    &none              &none         &none      &none     &none
             >;
         };
 
