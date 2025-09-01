@@ -55,14 +55,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        combo_thumbs_hyper {
-            bindings = <&kp LA(LC(LGUI))>;
-            key-positions = <65 70>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         snippet_mail: snippet_mail {
@@ -113,7 +106,7 @@
 &none   &none      &none     &none     &none    &none  &none                                        &none      &none             &none              &none         &none      &none     &none
 &none   &none      &none     &none     &none    &none  &none                                        &none      &kp CARET         &kp AMPERSAND      &kp ASTERISK  &kp LPAR   &kp RPAR  &none
 &none   &sk LCTRL  &sk LGUI  &sk LALT  &mo 3    &mo 4  &none  &none  &none       &none   &none      &none      &none             &kp MINUS          &kp UNDER     &kp EQUAL  &kp PLUS  &none
-&trans  &none      &none     &kp ESC   &kp TAB  &none                &none       &none                         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC      &kp RBRC   &none     &trans
+&trans  &none      &none     &kp ESC   &kp TAB  &sl 5                &none       &none                         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC      &kp RBRC   &none     &trans
 &none   &none      &none     &none     &none           &none  &none  &trans      &trans  &kp ENTER  &kp SPACE                    &none              &none         &none      &none     &none
             >;
         };
@@ -123,7 +116,7 @@
 &none   &none            &none      &none     &none       &none        &none                                              &none  &none     &none      &none      &none      &none  &none
 &none   &kp EXCLAMATION  &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT  &none                                              &none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &none
 &none   &kp LCTRL        &kp LGUI   &kp LALT  &none       &none        &none          &none    &none       &none   &none  &none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &none
-&trans  &kp TILDE        &kp GRAVE  &none     &none       &none                                &none       &none                 &sl 5     &none      &none      &none      &none  &trans
+&trans  &kp TILDE        &kp GRAVE  &none     &none       &none                                &none       &none                 &none     &none      &none      &none      &none  &trans
 &none   &none            &none      &none     &none                    &kp BACKSPACE  &kp DEL  &trans      &trans  &none  &none            &none      &none      &none      &none  &none
             >;
         };
