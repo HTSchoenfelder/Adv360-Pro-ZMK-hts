@@ -93,11 +93,11 @@
         default {
             display-name = "Default";
             bindings = <
-&none       &none  &none  &none  &none  &none  &tog 7                                                               &mo 8                   &none  &none  &none      &none    &none      &none
-&kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &to 1                                                                &to 0                   &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BACKSLASH
-&kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &to 4                &none      &none         &none     &none        &to 9                   &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
-&kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B                                  &none         &none                                          &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
-&mo 6       &none  &none  &none  &none         &hm LCTRL BACKSPACE  &lt 1 DEL  &kp RALT      &kp RALT  &lt 2 ENTER  &hm LA(LC(LGUI)) SPACE         &none  &none      &none    &none      &mo 6
+&none       &none  &none  &none  &none  &none  &tog 7                                                                              &mo 8                   &none  &none  &none      &none    &none      &none
+&kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &to 1                                                                               &to 0                   &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BACKSLASH
+&kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &to 4                &kp RIGHT_ALT  &kp LEFT_ALT      &kp LEFT_ALT   &kp RIGHT_ALT  &to 9                   &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
+&kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B                                      &none             &none                                                 &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
+&mo 6       &none  &none  &none  &none         &hm LCTRL BACKSPACE  &lt 1 DEL      &kp LEFT_GUI      &kp RIGHT_GUI  &lt 2 ENTER    &hm LA(LC(LGUI)) SPACE         &none  &none      &none    &none      &mo 6
             >;
         };
 
