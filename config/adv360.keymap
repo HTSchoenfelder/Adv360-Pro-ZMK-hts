@@ -55,7 +55,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        NumbersLayer {
+            bindings = <&mo 3>;
+            key-positions = <66 32>;
+        };
+    };
 
     macros {
         snippet_mail: snippet_mail {
@@ -93,11 +100,11 @@
         default {
             display-name = "Default";
             bindings = <
-&none       &none  &none  &none  &none  &none  &tog 7                                                                   &mo 8           &none  &none  &none      &none    &none      &none
-&kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &to 1                                                                    &to 0           &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BACKSLASH
-&kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &to 4                &none      &none         &none         &none        &to 9           &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
-&kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B                                  &none         &none                                      &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
-&mo 6       &none  &none  &none  &none         &hm LCTRL BACKSPACE  &lt 1 DEL  &kp RALT      &kp LEFT_ALT  &lt 2 ENTER  &hm LGUI SPACE         &none  &none      &none    &none      &mo 6
+&none       &none  &none  &none  &none  &none  &tog 7                                                               &mo 8                   &none  &none  &none      &none    &none      &none
+&kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &to 1                                                                &to 0                   &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BACKSLASH
+&kp ESCAPE  &kp A  &kp S  &kp D  &kp F  &kp G  &to 4                &none      &none         &none     &none        &to 9                   &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SINGLE_QUOTE
+&kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B                                  &none         &none                                          &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
+&mo 6       &none  &none  &none  &none         &hm LCTRL BACKSPACE  &lt 1 DEL  &kp RALT      &kp LGUI  &lt 2 ENTER  &hm LC(LA(LGUI)) SPACE         &none  &none      &none    &none      &mo 6
             >;
         };
 
@@ -105,7 +112,7 @@
             bindings = <
 &none   &none     &none     &none      &none    &none  &none                                        &none      &none             &none              &none         &none      &none     &none
 &none   &none     &none     &none      &none    &none  &none                                        &none      &kp CARET         &kp AMPERSAND      &kp ASTERISK  &kp LPAR   &kp RPAR  &none
-&none   &kp LALT  &kp LGUI  &kp LCTRL  &mo 3    &mo 4  &none  &none  &none       &none   &none      &none      &none             &kp MINUS          &kp UNDER     &kp EQUAL  &kp PLUS  &none
+&none   &sk LALT  &sk LGUI  &sk LCTRL  &mo 3    &mo 4  &none  &none  &none       &none   &none      &none      &none             &kp MINUS          &kp UNDER     &kp EQUAL  &kp PLUS  &none
 &trans  &none     &none     &kp ESC    &kp TAB  &sl 5                &none       &none                         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LBRC      &kp RBRC   &none     &trans
 &none   &none     &none     &none      &none           &none  &none  &trans      &trans  &kp ENTER  &kp SPACE                    &none              &none         &none      &none     &none
             >;
