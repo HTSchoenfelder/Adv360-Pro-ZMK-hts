@@ -131,8 +131,8 @@
         numbers {
             bindings = <
 &none   &none     &none     &none      &none  &none  &none                                    &none   &none         &none   &none   &none   &none       &none
-&none   &none     &none     &none      &none  &none  &none                                    &none   &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp COMMA   &none
-&none   &kp LALT  &kp LGUI  &kp LCTRL  &none  &none  &none  &none  &none       &none   &none  &none   &kp MINUS     &kp N4  &kp N5  &kp N6  &kp PLUS    &none
+&none   &none     &none     &none      &none  &none  &none                                    &none   &kp MINUS     &kp N7  &kp N8  &kp N9  &kp PLUS    &none
+&none   &kp LALT  &kp LGUI  &kp LCTRL  &none  &none  &none  &none  &none       &none   &none  &none   &kp ASTERISK  &kp N4  &kp N5  &kp N6  &kp COMMA   &none
 &trans  &none     &none     &none      &none  &none                &none       &none                  &kp SLASH     &kp N1  &kp N2  &kp N3  &kp PERIOD  &none
 &none   &none     &none     &none      &none         &none  &none  &trans      &trans  &none  &kp N0                &none   &none   &none   &none       &none
             >;
