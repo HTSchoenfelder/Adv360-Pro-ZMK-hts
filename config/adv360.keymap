@@ -130,11 +130,11 @@
 
         numbers {
             bindings = <
-&none   &none     &none     &none      &none  &none  &none                                        &none   &none      &none   &none   &none   &none         &none
-&none   &none     &none     &none      &none  &none  &none                                        &none   &kp MINUS  &kp N7  &kp N8  &kp N9  &kp PLUS      &none
-&none   &kp LALT  &kp LGUI  &kp LCTRL  &none  &none  &none  &none  &none       &none   &none      &none   &kp DOT    &kp N4  &kp N5  &kp N6  &kp ASTERISK  &none
-&trans  &none     &none     &none      &none  &none                &none       &none                      &kp COMMA  &kp N1  &kp N2  &kp N3  &kp SLASH     &none
-&none   &none     &none     &none      &none         &none  &none  &trans      &trans  &kp ENTER  &kp N0             &none   &none   &none   &none         &none
+&none   &none     &none     &none      &none  &none  &none                                        &none   &none         &none   &none   &none   &none      &none
+&none   &none     &none     &none      &none  &none  &none                                        &none   &kp PLUS      &kp N7  &kp N8  &kp N9  &kp MINUS  &none
+&none   &kp LALT  &kp LGUI  &kp LCTRL  &none  &none  &none  &none  &none       &none   &none      &none   &kp ASTERISK  &kp N4  &kp N5  &kp N6  &kp DOT    &none
+&trans  &none     &none     &none      &none  &none                &none       &none                      &kp SLASH     &kp N1  &kp N2  &kp N3  &kp COMMA  &none
+&none   &none     &none     &none      &none         &none  &none  &trans      &trans  &kp ENTER  &kp N0                &none   &none   &none   &none      &none
             >;
         };
 
